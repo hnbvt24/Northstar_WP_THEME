@@ -1,0 +1,2300 @@
+/*
+Theme Name: Northstar Church - 2019
+Theme URI: https://wordpress.org/themes/northstarchurch-2019/
+Author: Haley Bengtson
+Author URI: https://haleybengtson.com/
+Description: Northstar Church - 2019 Theme is a "revamp" of the church's site for a more modern, clean look and feel that is able to capture the church's vision of being the church. This theme focuses on what it means to be the church by creating a welcoming and calming presence for church members, attender, visitors and more. This theme will provide ways for people to easily find what it is they are looking for and be able to be a part of the church that much easier.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: northstarchurch-2019
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+:root {
+  --darkBlue: #114F7A;
+  --lightBlue: #89D3FC;
+  --blue:#1B80C6;
+  --orange: #E87D00;
+  --lightGrey: #DEE9F2;
+  --grey:#A3A3A3;
+  --darkGrey:#202020;
+  --navy:#082539;
+  --white:#FBFBFB;
+  --logo:#1D4455;
+}
+
+html {
+  /* border-box box model allows us to add padding and border to our elements without increasing their size */
+  box-sizing: border-box;
+  /* A system font stack so things load nice and quick! */
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--darkBlue);
+  scroll-behavior: smooth;
+}
+
+/*
+  We inherit box-sizing: border-box; from our <html> selector
+  Apparently this is a bit better than applying box-sizing: border-box; directly to the * selector
+*/
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  font-size: 104px;
+  text-transform: uppercase;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6,
+span,
+button,
+a,
+.dateMonth {
+  margin: 0 0 5px 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background: var(--white);
+  color: var(--darkBlue);
+  min-height: calc(100vh - 100px);
+  margin: 0;
+}
+
+img {
+  height: 100%;
+}
+
+p {
+  font-size: 16px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow:  visible;
+}
+
+/* ----- ACF EMBEDDED MAP ----- */
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+  } 
+
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+/* --------------------------- */
+
+.main-header p {
+  text-align: left;
+}
+
+.header-text p {
+  max-width: none;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+background-color: #fff; 
+}
+
+.italic-header {
+  font-style: italic;
+}
+
+span {
+  font-style: normal;
+}
+
+/* ------- BLUBRRY PODCAST PLAYER ------ */
+
+.post p.powerpress_links {
+ border-bottom: 1px solid #000000;
+ font-size: 12px;
+ padding-bottom: 3px;
+}
+
+/* -------  CONTAINERS  ------- */
+
+.header-container {
+  display: grid;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: none;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "header";
+  height: calc(100vh - 20vh);
+  align-items: flex-start;
+  z-index:1;
+}
+
+.small-header-container {
+  display: grid;
+  background-color: var(--grey);
+  background-size: cover;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "header";
+  height: calc(100vh - 40vh);
+  align-items: flex-start;
+}
+
+.services-container {
+  background-color: var(--darkBlue);
+  color: var(--white);
+  display:grid;
+  min-height: 15vh;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "services";
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(163,163,163,.9);
+  -moz-box-shadow: 0px 4px 10px 0px rgba(163,163,163,.9);
+  box-shadow: 0px 4px 10px 0px rgba(163,163,163,.9);
+}
+
+.slogan-container {
+  min-height: 15vh;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "slogan";
+}
+
+.building-campaign-container {
+  background-color: var(--darkBlue);
+  color: var(--white);
+  display: grid;
+  min-height: 5vh;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "building-nav";
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(163,163,163,.9);
+  -moz-box-shadow: 0px 4px 10px 0px rgba(163,163,163,.9);
+  box-shadow: 0px 4px 10px 0px rgba(163,163,163,.9);
+}
+
+.upcoming-container {
+  display: grid;
+  min-height: 35em;
+  margin: 0 5em;
+  padding: 0 50px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 255px 1fr;
+  grid-gap: 0 2em;
+  grid-template-areas: 
+  "events news"
+  "events blog";
+}
+
+.sermons-container,
+.events-container,
+.news-container {
+  display: grid;
+  min-height: 45em;
+  margin: 0 5em;
+  padding: 0 50px;
+}
+
+.event-container {
+  display: grid;
+  min-height: 38em;
+  margin: 0 5em;
+  padding: 0 50px;
+}
+
+.main-container {
+  margin: auto 0;
+  min-height: 25em;
+  margin: 5em;
+  padding: 0 50px;
+  grid-template-columns: 1fr;
+ /* grid-template-rows: 100px auto;*/
+  grid-template-areas: 
+  "top-h"
+  "content";
+}
+
+.leader-container {
+   grid-template-columns: 1fr;
+}
+
+.leadership-board-container {
+  grid-template-columns: 1fr;
+}
+
+.blue-container {
+  background-color: var(--darkBlue);
+  color: var(--white);
+  display: grid;
+}
+
+.vision-container {
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "top-h top-h"
+  "vision location";
+}
+
+.main-header,
+.vision,
+.location-content {
+  margin: 3em 3.5em;
+}
+
+.app-promo-container {
+  display: grid;
+  min-height: 40em;
+  margin: 0 5em;
+  grid-template-columns: 1fr;
+}
+
+.footer-container {
+  display: grid;
+  background-color: var(--lightGrey);
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "footer"
+  "b-bar";
+}
+
+.bottom-bar-container {
+  display: grid;
+  background-color: var(--darkBlue);
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "b-bar";
+}
+
+.selectedEvent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "m-e-details m-e-links";
+  min-height: 32em;
+}
+
+/* -------  GRID AREAS  ------- */
+
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 100px 1fr;
+  height: 100%;
+  grid-template-areas: 
+  "logo nav nav"
+  "cta cta cta";
+  align-items: center;
+  margin: 0 5em;
+  z-index: 1;
+}
+
+.logo {
+  grid-area: logo;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.hamburger {
+  display: grid;
+  grid-area: menu-icon;
+  justify-content: flex-end;
+}
+
+.nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.callToAction {
+  grid-area: cta;
+  padding: 100px 50px;
+  color: var(--white);
+}
+
+.header-text {
+  grid-area: cta;
+  padding: 0;
+  color: var(--white);
+  text-align: center;
+}
+
+.serviceTimes {
+  grid-area: services;
+  display: flex;
+  margin: 0 2em;
+  justify-content: center;
+}
+
+.serviceHours {
+  grid-area: hours;
+  font-size: 1.5em;
+  padding: 0 10px 0 0;
+  font-weight: 700;
+}
+
+.serviceExcerpt {
+  grid-area: excerpt;
+  font-size: 1.5em;
+  font-weight: 400;
+  padding: 0 0 20px 0;
+}
+
+.building-nav {
+  font-size: 24px; 
+  grid-area: building-nav;
+  list-style: none;
+ 
+}
+
+.building-nav ul {
+  margin: 0;
+  height: 100%;
+  align-items: center;
+}
+
+.nav-options {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.nav-options li {
+  background-color: var(--darkBlue);
+  color: var(--white);
+  border: solid 1px #fff;
+  padding: 30px 0;
+}
+
+.nav-options a {
+  background-color: var(--darkBlue);
+  color: var(--white);
+  margin: 0;
+}
+
+.slogan {
+  grid-area: slogan;
+  display: flex;
+  flex-direction: column;
+  margin: 0 2em;
+  justify-content: center;
+  align-content: center;
+}
+
+.slogan h2 {
+  font-style: italic;
+  flex-wrap: wrap;
+  justify-content: center;
+  line-height: 1.5;
+  max-width: 9em;
+}
+
+.slogan span {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.sloganExcerpt {
+  grid-area: excerpt;
+  font-size: 1.5em;
+  font-weight: 400;
+  display:flex;
+  align-self: center;
+}
+
+.btn-6b-inverse {
+  grid-area: btnB;
+  align-self: center;
+  min-width: 180px;
+  max-width: 220px;
+}
+
+.upcoming-events {
+  grid-area: events;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-areas:
+  "upcoming-header"
+  "list-of-events"
+  "event-btn";
+}
+
+.sermon {
+  display: grid;
+}
+
+.list-of-sermons {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em 0;
+}
+
+.more-sermons-btn {
+  min-width: 20em;
+  text-align: center;
+  align-self: flex-start;
+  padding-top: 50px;
+}
+
+.latest-announcements {
+  grid-area: news;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "upcoming-header"
+  "latest-announcement";
+}
+
+.latest-blog {
+  grid-area: blog;
+  display: grid;
+  align-self: flex-start;
+  max-width: 32em;
+  padding: 0 10px;
+  height: 20em;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "post";
+}
+
+.upcoming-header {
+  grid-area: upcoming-header;
+  padding-top: 50px;
+}
+
+.upcoming-header a {
+  color: var(--darkBlue);
+}
+
+.list-of-events {
+  grid-area: list-of-events;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.list-of-events-main,
+.list-of-news {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em 0;
+}
+
+.more-events-btn {
+  grid-area: event-btn;
+  align-self: flex-start;
+}
+
+.blog-post {
+  grid-area: post;
+  display: grid;
+  align-self: flex-start;
+  padding: 16px;
+  -webkit-box-shadow: 0px 10px 15px 0px rgba(163,163,163,.6);
+  -moz-box-shadow: 0px 10px 15px 0px rgba(163,163,163,.6);
+  box-shadow: 0px 10px 15px 0px rgba(163,163,163,.6);
+  grid-template-areas: 
+  "title time"
+  "blog-sum blog-sum"
+  "blog-img blog-img"
+  "share share";
+}
+
+.blog-summary__title {
+  grid-area: title;
+}
+
+.time {
+  grid-area: time;
+  font-style: italic;
+  justify-content: flex-end;
+  padding-right: 5px;
+}
+
+.blog-sum {
+  grid-area: blog-sum;
+  padding-right: 5px;
+}
+
+.blog-img {
+  grid-area: blog-img;
+  height: 100px;
+}
+
+.blog-img img {
+  object-fit: cover;
+  object-position: 0 30%;
+}
+
+.share {
+  grid-area: share;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+}
+
+.app-promo__image {
+  grid-area: promo-img;
+  display: flex;
+  align-self: center;
+  justify-content: flex-end;
+}
+
+.app-promo__summary {
+  grid-area: promo-sum;
+  align-self: center;
+  justify-content: flex-start;
+  max-width: 30em;
+}
+
+.footer {
+  grid-area: footer;
+  display:grid;
+  margin: 2em 5em;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas: 
+  "f-logo f-nav f-return";
+}
+
+.footer-logo {
+  grid-area: f-logo;
+}
+
+.footer-nav {
+  grid-area: f-nav;
+  text-decoration-style: none;
+}
+
+.return-to-top {
+  grid-area: f-return;
+}
+
+.bottom-bar {
+  grid-area: b-bar;
+  display: grid;
+  margin: 1em 5em;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: 
+  "copy social";
+}
+
+.copyright {
+  grid-area: copy;
+}
+
+.social-media {
+  grid-area: social;
+}
+
+.contact {
+  display: grid;
+  margin: 3em 5em;
+  grid-gap: 2em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "top-h top-h"
+  "location service";
+}
+
+.music {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.main-header {
+  grid-area: top-h;
+  padding: 15px 0;
+}
+
+.main-content {
+  grid-area: content;
+}
+
+.main-team {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 2em;
+}
+
+.location {
+  grid-area: location;
+  text-align: center;
+}
+
+.service {
+  grid-area: service;
+  text-align: center;
+}
+
+.vision {
+  grid-area: vision;
+  display: grid;
+  align-items: flex-start;
+}
+
+.main-event-details {
+  grid-area: m-e-details;
+}
+
+.main-event-social {
+  display: grid;
+  grid-area: m-e-links;
+  grid-template-columns: 1fr;
+}
+
+.main-event-nav {
+  grid-area: m-e-nav;
+}
+
+/* ------- CALL TO ACTION ------- */
+
+.callToAction h2 {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: lighter;
+  margin: 4px 0;
+}
+
+.callToAction span {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.callToAction p,
+.header-text p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 4px 0 24px 0;
+}
+
+.callToAction p {
+  max-width: 21em;
+}
+
+.callToAction .btn {
+  min-width: 100px;
+}
+
+/* ------- Sermon player and navigation ------- */
+
+.sermon-player {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 5fr 1fr;
+}
+
+.sermon-play-btn {
+  text-align: center;
+}
+
+.sermon-play-btn img {
+  width: 80px;
+  height: 80px;
+}
+
+.audio-player-bar {
+
+  padding: 6px 0 6px 0;
+}
+
+.archive {
+  display: flex;
+  justify-content: center;
+}
+
+.archive a {
+  color: var(--darkBlue);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.pagination a, span.current {
+  color: var(--darkBlue);
+  float:left;
+  font-size: 18px;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.sermons,
+.events,
+.news {
+  margin: 5em 0;
+}
+
+.sermons .upcoming-header,
+.events .upcoming-header,
+.news .upcoming-header {
+  text-align: center;
+  padding: 0 0 50px 0;
+}
+
+/* ------- EVENT PAGE & NEWS PAGE ------- */
+
+.event {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
+}
+
+.news-article {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+.event-summary,
+.news-summary
+.main-event-summary {
+  display: grid;
+  align-items: flex-end;
+}
+
+.news-summary,
+.main-event-summary {
+  padding: 1em 2em;
+  background-color: var(--lightGrey);
+}
+
+.event-read-more,
+.news-read-more {
+  display: grid;
+  align-self: flex-end;
+  justify-content: flex-start;
+}
+
+.time-and-place {
+  padding: 15px 0 5px 0;
+}
+
+.main-prev-events-btn {
+  display: grid;
+  padding-top: 50px;
+}
+
+.event-time {
+  font-size: 18px;
+}
+
+.prev-events-btn,
+.prev-news-btn {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+}
+
+.prev-events-btn__small {
+  display: none;
+}
+
+.prev-events-btn a button,
+.prev-news-btn a button {
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.prevBtn {
+  text-align: left;
+}
+
+.nextBtn {
+  text-align: right;
+}
+
+.event-summary h3 {
+  font-size: 22px;
+}
+
+.event-summary h4 {
+  font-weight: 400;
+  padding: 5px 0 5px 0;
+}
+
+.news-summary h5,
+.news-summary h6 {
+  font-weight: 400;
+}
+
+.event-img img,
+.news-img img {
+  width: 100%;
+  object-fit: cover;
+  object-position: 0 20%;
+}
+
+.news-summary,
+.news-img img {
+  max-height: 225px;
+}
+
+.event-read-more a, 
+.event-read-more button,
+.news-read-more a,
+.news-read-more button {
+  margin: 0;
+}
+
+.event-read-more a:hover .btn-6a, 
+.event-read-more a:focus-within .btn-6a,
+.news-read-more a:hover .btn-6a, 
+.news-read-more a:focus-within .btn-6a {
+  color: var(--darkBlue);
+  border-color: var(--darkBlue);
+}
+
+/* -------  SERVICES & UPCOMING EVENTS & ANNOUNCEMENTS STYLING  ------- */
+
+.overlay {
+  position: relative;
+  background-repeat: no-repeat;
+  background-image:none;
+}
+
+.overlay:after {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image:none;
+  content:"";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  opacity:.5;
+  background-color: var(--darkGrey);
+}
+
+.serviceTimes > * {
+  padding: 0 12px;
+  align-self: baseline;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.upcoming-header span,
+.main-header span {
+  text-transform: uppercase;
+}
+
+.main-header {
+  text-align: center;
+  
+}
+
+.blog-summary__title,
+.time {
+  display: grid;
+  align-content: baseline;
+}
+
+.upcoming-event {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 32px;
+}
+
+.event-date {
+  margin: 0;
+  color: var(--white);
+}
+
+.event-date__day {
+  background-color: var(--grey);
+  display: block;
+  font-size: 20px;
+  padding: 14px 0;
+  min-width: 120px;
+  max-width: 140px;
+  line-height: 1;
+  text-align: center;
+  margin: 0;
+}
+
+.event-date__month {
+  background-color: var(--darkBlue);
+  display: block;
+  font-size: 20px;
+  padding: 14px 0;
+  min-width: 120px;
+  max-width: 140px;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.event-summary {
+  padding: 10px;
+}
+
+.event-summary__title a,
+.announcement-summary__title a,
+.news-summary__title a {
+  text-decoration: none;
+  color: var(--darkBlue);
+}
+
+.event-summary p,
+.event-summary p a,
+.news-summary p {
+  color: var(--darkBlue);
+  font-size: 12px;
+  line-height: 1.2em;
+  max-height: 3.6em;
+}
+
+.sermon-summary p {
+  max-width: 100%;
+}
+
+.latest-announcement {
+  padding: 0 10px;
+}
+
+.blog-summary__title a,
+.share {
+  color: var(--darkBlue);
+  text-decoration: none;
+}
+
+.logo a:hover,
+.logo a:focus-within,
+.event-summary p a:hover,
+.event-summary p a:focus-within,
+.event-summary__title a:hover,
+.event-summary__title a:focus-within,
+.announcement-summary__title a:hover,
+.announcement-summary__title a:focus-within,
+.blog-summary__title a:hover,
+.blog-summary__title a:focus-within,
+.share:hover,
+.share:focus-within,
+.footer a:hover,
+.footer a:focus-within,
+.bottom-bar a:hover,
+.bottom-bar a:focus-within,
+.social-links img:hover,
+.social-links img:focus-within,
+.pagination a:hover,
+.pagination a:focus-within,
+.upcoming-header a:hover,
+.upcoming-header a:focus-within {
+  color: var(--orange);
+  transition: 0.1s ease;
+}
+
+.nav-options a:hover li,
+.nav-options a:focus-within li,
+.nav-options a:hover,
+.nav-options a:focus-within {
+  background-color: var(--white);
+  color: var(--orange);
+  transition: 0.1s ease;
+}
+
+.blog-post img {
+  width: 100%;
+}
+
+.event-social-links {
+  padding-top: 50px;
+  text-align: right;
+}
+
+.event-social-links a {
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.event-social-links a img {
+  margin: 0 auto;
+  max-height: 5em;
+  padding: 15px;
+}
+
+/* ------- LINK COLORS ------- */
+
+.blue-container a,
+.main-container a {
+  color: var(--orange);
+}
+
+/* --------------------------- */
+
+/* -------  NAVIGATION  ------- */
+
+.sub-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+  padding-left: 0;
+  margin-top: 5px;
+}
+
+.logo, .nav {
+  padding: 2em 0;
+}
+
+.logo a,
+.nav-options a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.sub-menu li {
+  display: grid;
+  border-bottom: 5px solid transparent;
+  list-style-type: none;
+  position: relative;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.sub-menu a {
+  color: var(--white);
+  font-weight: 600;
+  margin: 0 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 16px;
+}
+
+.sub-menu li:hover,
+.sub-menu li:focus-within {
+  cursor: pointer;
+  border-bottom: 5px solid var(--orange); 
+}
+
+.sub-menu li:hover a,
+.sub-menu li:focus-within a{
+  color: var(--orange);
+}
+
+.sub-menu li:focus-within a {
+  outline: none;
+}
+
+.sub-menu li ul {
+  background: var(--white);
+  border-radius: 0 5px 5px 5px;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 11rem;
+  position: absolute;
+  padding-left: 0;
+  margin-top: 1rem;
+  top: 22px;
+  display: none;
+}
+
+.sub-menu li:hover > ul,
+.sub-menu li:focus-within > ul,
+.sub-menu li ul:hover,
+.sub-menu li ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.sub-menu li ul li {
+    clear: both;
+    color: var(--orange);
+    padding: 10px 32px 10px 0;
+    text-align: left;
+    width: 100%;
+}
+
+.sub-menu li ul li:hover,
+.sub-menu li ul li:focus-within {
+  background-color: var(--orange);
+  border-radius: 0;
+}
+
+.sub-menu li ul li:hover a,
+.sub-menu li ul li:focus-within a {
+  color: var(--white);
+}
+
+.sub-menu li ul:first-child:hover,
+.sub-menu li ul:first-child:focus-within {
+  border-radius: 0px 5px 0 0;
+}
+
+.sub-menu li ul:last-child:hover,
+.sub-menu li ul:last-child:focus-within {
+  border-radius: 0 0 5px 5px;
+}
+
+.sub-menu li ul li a {
+  color: var(--white);
+  width: 100%;
+}
+
+.hamburger {
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked + #menu-main-menu {
+    display: flex;
+}
+
+/* ------- Buttons ------- */
+
+/* button style from https://codepen.io/archivum/pen/NPPOaj */
+.btn-6 {
+  color: var(--orange);
+  background: var(--white);
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+  height: 40px;
+  min-width: 100px;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.btn-6:active {
+  top: 2px;
+}
+
+/* Button 6a */
+.btn-6a {
+  background-color: var(--orange);
+  border-radius: 6px;
+  color: var(--white);
+  width: 100%;
+}
+
+.btn-6a:hover,
+.btn-6a:focus-within {
+  background: transparent;
+  border: 4px solid var(--orange);
+  color: var(--orange);
+  padding: 4px;
+}
+
+/* Button 6b */
+.btn-6b {
+  border-radius: 6px;
+}
+
+.btn-6b:hover,
+.btn-6b:focus-within {
+  background: transparent;
+  border: 4px solid var(--orange);
+  color: var(--white);
+  padding: 4px;
+}
+
+/* Button 6b inverted color */
+.btn-6b-inverse {
+  background-color: var(--white);
+  border-radius: 6px;
+  color: var(--orange);
+  min-width: 140px;
+}
+
+.btn-6b-inverse:hover,
+.btn-6b-inverse:focus-within {
+  background: transparent;
+  border: 4px solid var(--orange);
+  color: var(--white);
+  padding: 4px;
+}
+
+.btn-6b:active,
+.btn-6b-inverse:active {
+  background: var(--orange);
+  color: var(--white);
+}
+
+.btn-6a:active {
+  background: var(--darkBlue);
+  border-color: var(--darkBlue);
+  color: var(--white);
+}
+
+/* ------- Location & Main content ------- */
+
+.content-img img {
+  max-width: 100%;
+  height: auto;
+  padding: 12px 12px 0 12px;
+}
+
+.worship-img img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: 0 20%;
+  margin-top: 1em;
+}
+
+.overlay-image {
+ position: relative;
+ margin-top: 12px;
+ width: 100%;
+}
+
+/* Original image */
+.overlay-image .image {
+ display: block;
+ padding: 0;
+ width: 100%;
+ height: auto;
+}
+/* Original text overlay */
+.overlay-image .text {
+ color: #fff;
+ font-size: 30px;
+ line-height: 1.5em;
+ text-shadow: 2px 2px 2px #000;
+ text-align: center;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ width: 100%;
+}
+
+/* New overlay on hover */
+.overlay-image .hover {
+ position: absolute;
+ top: 0;
+ padding: 0;
+ height: 100%;
+ width: 100%;
+ opacity: 0;
+ filter: alpha(opacity=0);
+ transition: .5s ease;
+}
+/* New overlay appearance on hover */
+.overlay-image a:hover .hover {
+ background-color: #000;
+ filter: alpha(opacity=80);
+ opacity: 0.8;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.serviceTime {
+  align-self: center;
+  font-size: 3em;
+  width: 200px;
+}
+
+.directions-btn {
+  min-width: 18em;
+  align-self: bottom;
+}
+
+.visit-ministry-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.visit-ministry-content__classes ul li {
+  list-style: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  padding: 1em 0;
+}
+
+.main-classes {
+  text-align: center;
+}
+
+.mission-bottom-slogan {
+  margin-top: 4em;
+}
+
+.affiliation-images {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 2em;
+}
+
+.affiliation-images img {
+  background-color: var(--white);
+  width: 100%;
+  object-fit: contain;
+  object-position: 0 50%;
+}
+
+.affiliation-images .white-logo {
+  background-color: var(--logo);
+}
+
+.register {
+  margin: 5em 10em;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+.extraDiv {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+.register button {
+  max-width: 400px;
+}
+
+.group {
+  margin: 2em 0;
+  grid-template-areas: 
+  "group-name group-image"
+  "group-name group-image";
+}
+
+.register a,
+.group-links a {
+  text-decoration: none;
+}
+
+.main-groups {
+  display:grid;
+  grid-template-columns: 1fr;
+}
+
+.group-text {
+  grid-area: group-text;
+}
+
+.group-links {
+  grid-area: group-links;
+  width: 20em;
+}
+
+.serve-group, .small-group {
+  display: grid;
+  align-items: flex-end;
+}
+
+.group-link {
+  margin: 6px auto;
+}
+
+.group-image {
+  grid-area: group-image;
+}
+
+.group-content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 0 2em;
+  grid-template-areas:
+  "group-text group-image"
+  "group-links group-image";
+  width: 100%;
+}
+
+.group-image img {
+  width: 25em;
+  height: 15em;
+  object-fit: cover;
+  object-position: 0 50%;
+}
+
+
+.ministry__image img {
+  min-width: 20em;
+  height: 15em;
+  padding: 12px 0;
+  object-fit: cover;
+  object-position: 0 50%;
+}
+
+.ministry__social-media {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  margin: 5em auto 0 auto;
+  text-align:center;
+  width: 20em;
+}
+
+.ministry__social-media img {
+  width: 4em;
+}
+
+.fund-container-text {
+  text-align: center;
+}
+
+.fund-container-text .fund-count {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+/* ------- LEADERS ------- */
+
+.leaders {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4em;
+  margin: 5em 5em 0 5em;
+  text-align: center;
+}
+
+.leadership-board {
+  margin: 5em 6em 0 6em;
+  text-align: center;
+}
+
+.leader h4,
+.leadership-board h4 {
+  margin: 1.67em 0;
+  padding: 0;
+}
+
+.leader h5,
+.leadership-board h5 {
+  font-weight: 400;
+  color: var(--darkGrey);
+}
+
+.leader img {
+  max-width: 15em;
+  max-height: 15em;
+  object-fit: cover;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(214,214,214,1);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(214,214,214,1);
+  box-shadow: 0px 8px 20px 0px rgba(214,214,214,1);
+}
+
+.leadership-board img {
+  max-width: 100%;
+  max-height: 25em;
+  object-fit: cover;
+}
+
+.leader img:hover,
+.leader img:focus-within {
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+}
+
+/* -------  APP PROMOTION  ------- */
+
+.app-promo {
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  grid-gap: 4em;
+  justify-content: center;
+  grid-template-areas: 
+  "promo-img promo-sum";
+}
+
+.app-promo__image img {
+  width: 200px;
+}
+
+.download-links img {
+  width: 135px;
+}
+
+
+/* ------- Footer ------- */
+
+.footer a,
+.copyright {
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+}
+
+.footer a {
+  color: var(--darkBlue);
+}
+
+.footer-logo a,
+.return-to-top a {
+  font-size: 1.12em;
+  font-weight: 700;
+}
+
+.footer-nav a,
+.bottom-bar {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.return-to-top a {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.return-to-top img{
+  width: 2em;
+}
+
+.copyright {
+  color: var(--white);
+}
+
+.footer-nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style: none;
+  grid-gap: 5px 2em;
+}
+
+.social-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: flex-end;
+}
+
+.social-links a {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-links img {
+  width: 1.25em;
+
+}
+
+/* -------- Blog/News Post -------- */
+
+.post {
+  background-color: var(--lightGrey);
+  color: var(--darkBlue);
+  padding: 1em 4em;
+  display: grid;
+}
+
+.blog-post-info {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.blog-post-info img{
+  display: grid;
+  align-self: flex-start;
+  text-align: right;
+  max-width: 10em;
+  max-height: 10em;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.news-summary a {
+  color: var(--darkBlue);
+}
+
+.post a {
+  color: var(--blue);
+}
+
+.response {
+  text-align: right;
+  float: right;
+  display: grid;
+  padding: 0 12px 0 0 ;
+}
+
+.response h3 {
+  min-width: 60px;
+  max-width: 125px;
+}
+
+.comments {
+  padding: 12px 0 0 0 ;
+}
+
+.comments button {
+  border-radius: 6px;
+}
+
+.comments textarea {
+   width: 100%;
+   background-color: var(--white);
+   border: 1px solid var(--lightGrey);
+   border-radius: 5px;
+   color: var(--darkGrey);
+   height: 100px;
+   padding: 12px 20px;
+   margin: 8px 0;
+   overflow: auto;
+   box-shadow: inset 2px 2px 4px 0 var(--lightGrey);
+}
+
+.returnHome {
+  padding: 24px 0 32px 0;
+}
+
+.returnHome a {
+  color: var(--darkBlue);
+  font-size: 1.2em;
+}
+
+/* ------- Media Queries ------- */
+
+@media(max-width: 996px){
+
+  .header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "logo menu-icon"
+    "cta cta";
+  }
+
+  .callToAction {
+    padding: 100px 0;
+  }
+
+  .hamburger {
+    display: flex;
+    justify-content: flex-end;
+    z-index: 101;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .sub-menu {
+    display: none;
+  }
+  
+  .sub-menu.is-open{
+    background-color: var(--navy);
+    display:block;
+    font-size: 16px;
+    position: fixed; 
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding-top: 5em;
+    z-index: 100;
+    zoom: 1;
+    filter: alpha(opacity=95);
+    opacity: 0.95;
+  }
+
+  /* to the body element */
+  .noscroll { 
+    overflow: hidden; 
+  }
+
+  .sub-menu li {
+    display: block;
+    padding: 12px 0;
+  }
+
+  .sub-menu li a {
+    color: var(--white);
+  }
+
+  .sub-menu li:hover,
+  .sub-menu li:focus-within {
+    background-color: var(--white);
+    border-radius: 0;
+  }
+
+  .sub-menu li:hover, 
+  .sub-menu li:hover > a,
+  .sub-menu li:focus-within, 
+  .sub-menu li:focus-within > a {
+    color: var(--orange);
+  }
+
+  .sub-menu li ul {
+    background: var(--white);
+    color: var(--orange);
+    border-radius: 0;
+    position: relative;
+    padding: 12px 0 0 0;
+    margin: 6px 0 0 0;
+    top: 0;
+  }
+
+  .sub-menu li ul li {
+    clear: both;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .sub-menu li ul li:hover,
+  .sub-menu li ul li:focus-within {
+    background-color: var(--orange);
+    border-radius: 0;
+  }
+
+  .sub-menu li:hover > ul:first-child {
+    padding-top: 12px;
+  }
+
+  .sub-menu li ul:first-child:hover,
+  .sub-menu li ul:last-child:hover,
+  .sub-menu li ul:first-child:focus-within,
+  ..sub-menu li ul:last-child:focus-within {
+    border-radius: 0;
+  }
+
+  .sub-menu li ul li a {
+    color: var(--orange);
+    margin: 0;
+    width: 100%;
+  }
+
+  .sub-menu li ul li a:hover,
+  .sub-menu li ul li a:focus-within {
+    color: var(--white);
+  }
+
+  .sub-menu:checked + .sub-menu {
+    display: block;
+  }
+
+  .leaders {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 5em 3em 0 3em;
+  }
+
+  .events-container {
+    margin: 0;
+  }
+
+}
+
+@media(max-width: 905px){
+
+  .callToAction {
+    padding: 50px 0;
+  }
+
+  .upcoming-container {
+    margin: 0 5em;
+    padding: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0;
+    grid-template-areas: 
+    "events"
+    "news"
+    "blog";
+  }
+
+  .serviceTimes {
+    display: flex;
+    margin: 0 5em;
+    padding: 2.5em;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .serviceTimes > * {
+    align-self: center;
+    margin: 0;
+    text-decoration: none;
+  }
+
+  .serviceExcerpt> * {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-6b-inverse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .upcoming-events {
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .event-summary p {
+    max-width: 100%;
+  }
+
+  .latest-announcement {
+    text-align: center;
+  }
+
+  .latest-announcements-header {
+    padding-top: 0;
+  }
+
+  .latest-blog {
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .upcoming-header {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  .app-promo-container {
+    display: grid;
+    min-height: 45em;
+    margin: 0 5em;
+    grid-template-columns: 1fr;
+  }
+
+  .app-promo {
+    grid-gap: 0;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "promo-sum"
+    "promo-img";
+    padding: 7em 0 5em 0;
+  }
+
+  .app-promo__summary {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .app-promo__image {
+    justify-content: center;
+    padding-bottom: 25px;
+  }
+
+  .footer {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "f-logo f-logo"
+    "f-nav f-return";
+  }
+
+  .footer-logo {
+    padding-bottom: 20px;
+  }
+
+  .footer-nav ul {
+    padding: 0;
+  }
+
+  .bottom-bar {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "top-h"
+    "service"
+    "location";
+    margin: 0;
+  }
+
+  .content-img img {
+    padding: 12px 0 0 0;
+  }
+
+  .visit-ministry-content {
+    grid-template-columns: 1fr;
+  }
+
+  .visit-ministry-content__classes {
+    text-align:center;
+  }
+
+  .classes {
+    padding: 0;
+  }
+
+  .vision-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "top-h"
+    "vision"
+    "location";
+  }
+
+  .affiliation-images {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+  }
+
+  .event {
+    grid-template-columns: 1fr;
+  }
+
+  .event-date__day,
+  .event-date__month {
+    max-width: none;
+    font-size: 2em;
+  }
+
+  .selectedEvent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "m-e-details" 
+    "m-e-links";
+    min-height: 32em;
+  }
+
+  .event-social-links {
+    text-align: center;
+    padding: 25px 0;
+  }
+
+  .time-and-place {
+    text-align: center;
+  }
+
+  .time-and-place > h4 {
+    font-size: 2em;
+  }
+
+  .time-and-place > address {
+    font-size: 1.5em;
+  }
+
+  .group-content {   
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "group-text"
+    "group-image"
+    "group-links";
+  }
+
+  .group-image img {
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 10%;
+  }
+
+  .group-links {
+    width: 100%;
+  }
+
+  .main-team {
+    grid-template-columns: 1fr;
+  }
+
+  .ministry__image img {
+    width: 100%;
+  }
+
+  .register {
+    margin: 5em 0;
+  }
+
+  .register button {
+    min-width: 200px;
+  }
+
+  .news-container {
+    margin: 0;
+  }
+
+  .news-article {
+    grid-template-columns: 1fr;
+  }
+
+  .news-read-more {
+    justify-content: initial;
+  }
+
+  .sermons-container {
+    padding: 0;
+  }
+
+  .sermon {
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 2em;
+  }
+
+  .excerpt-text {
+    display: none;
+  }
+
+  h1 {
+    font-size: 85px;
+    margin: 0;
+  }
+
+
+}
+
+@media(max-width: 629px) {
+
+  h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+
+  .main-header {
+    margin: 0;
+  }
+
+  .main-container {
+    margin: 5em 0;
+  }
+
+  .header,
+  .app-promo-container, 
+  .serviceTimes,
+  .upcoming-container {
+    margin: 0 1em;
+  }
+
+  .btn-6b-inverse {
+    margin-top: 2em;
+  }
+  
+  .callToAction {
+    text-align: center;
+  }
+
+  .callToAction h2,
+  .callToAction span {
+    font-size: 1.5em;
+  }
+
+  .callToAction p {
+    max-width: 100%;
+    margin: 1em 2.5em 2em 2.5em;
+  }
+
+  .event-summary {
+    align-items: center;
+  }
+
+  .event-summary__title,
+  .news-summary__title,
+  .blog-summary__title {
+    font-size: 1.85em;
+  }
+
+  .event-summary > p,
+  .news-summary > p,
+  .blog-summary > p {
+    display: none;
+  }
+  .news-summary > h5,
+  .news-summary > h6,
+  .blog-summary > h5,
+  .blog-summary > h6 {
+    font-size: 1em;
+  }
+
+  .more-events-btn {
+    padding-top: 12px;
+  }
+
+  .more-events-btn button {
+    font-size: 1.25em;
+  }
+
+  .event-container {
+    padding: 0;
+    margin: 2em;
+  }
+
+  .prev-events-btn {
+    display: none;
+  }
+
+  .prev-events-btn__small {
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+
+  .prev-events-btn__small img {
+    width: 4em;
+  }
+    
+  .prev-events-btn__small a {
+    padding: 0 2em;
+    height: 100%;
+  }
+
+  .blog-sum {
+    display: none;
+  }
+
+  .blog-img {
+    padding-top: 10px;
+    height: 150px;
+  }
+
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "f-logo f-return"
+    "f-nav f-nav";
+    margin: 2em 2em;
+  }
+
+  .footer-nav ul {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 32px;
+    text-align: center;
+  }
+
+  .footer-nav a {
+    font-size: 16px;
+  }
+
+  .bottom-bar {
+    grid-gap: 2em 0;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "social"
+    "copy";
+    margin: 1em 2em;
+  }
+
+  .social-links a {
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .social-links img {
+    width: 2em;
+  }
+
+  .copyright {
+    text-align: center;
+  }
+
+  .building-campaign-container {
+    display: none;
+  }
+
+  .affiliation-images {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em;
+  }
+
+  .leaders {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 5em 1em 0 1em;
+  }
+
+  .leadership-board {
+    margin: 5em 1em 0 1em;
+    text-align: center;
+  }
+
+  .leader h5, 
+  .leadership-board h5 {
+    font-size: 1em;
+  }
+
+  .register {
+    margin: 5em 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .register button {
+    min-width: 240px;
+    word-wrap: break-word;
+  }
+
+  .leader-page .main-container {
+    grid-template-rows: auto;
+  }
+
+  .leader-page .leaders {
+    margin: 0;
+  }
+
+  .news-container {
+    padding: 0;
+  }
+
+  .post {
+    background-color: var(--lightGrey);
+    color: var(--darkBlue);
+    padding: 1em 2em;
+    display: grid;
+  }
+
+  .blog-post-info {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+
+  .blog-post-info img{
+    display: grid;
+    align-self: flex-start;
+    text-align: right;
+    max-width: 10em;
+    max-height: 10em;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .sermons-container {
+    margin: 0 2em;
+  }
+
+  .sermon {
+    grid-template-columns: 1fr;
+  }
+
+  .ministry__image img {
+    min-width: 5em;
+  }
+
+}
