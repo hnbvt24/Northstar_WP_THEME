@@ -1,0 +1,1242 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Video Background Pro\n"
+"POT-Creation-Date: 2019-07-06 12:28-0700\n"
+"PO-Revision-Date: 2016-06-05 01:12-0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: vidbgpro.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: inc/admin_notices.php:19
+msgid ""
+"Thank you for purchasing Video Background Pro! If you need any assistance, "
+"please visit the <a href=\"https://pushlabs.co/docs/video-background-pro/\" "
+"target=\"_blank\">docs</a>."
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin.php:54
+#: inc/classes/vidbg_siteorigin_integration.php:143
+#: inc/classes/vidbg_vc_integration.php:160
+#: inc/classes/vidbg_vc_integration.php:171
+#: inc/classes/vidbg_vc_integration.php:182
+#: inc/classes/vidbg_vc_integration.php:193
+#: inc/classes/vidbg_vc_integration.php:204
+#: inc/classes/vidbg_vc_integration.php:215
+#: inc/classes/vidbg_vc_integration.php:222
+#: inc/classes/vidbg_vc_integration.php:229
+#: inc/classes/vidbg_vc_integration.php:242
+#: inc/classes/vidbg_vc_integration.php:254
+#: inc/classes/vidbg_vc_integration.php:265
+#: inc/classes/vidbg_vc_integration.php:272
+#: inc/classes/vidbg_vc_integration.php:280
+#: inc/classes/vidbg_vc_integration.php:292
+#: inc/classes/vidbg_vc_integration.php:300
+#: inc/classes/vidbg_vc_integration.php:312
+#: inc/classes/vidbg_vc_integration.php:320
+#: inc/classes/vidbg_vc_integration.php:328 inc/classes/vidbg_wpbakery.php:62
+#: inc/classes/vidbg_wpbakery.php:74 inc/classes/vidbg_wpbakery.php:82
+#: inc/classes/vidbg_wpbakery.php:90 inc/classes/vidbg_wpbakery.php:104
+#: inc/classes/vidbg_wpbakery.php:117 inc/classes/vidbg_wpbakery.php:125
+#: inc/classes/vidbg_wpbakery.php:138 inc/register_wpbakery.php:28
+#: inc/register_wpbakery.php:41 inc/register_wpbakery.php:54
+#: inc/register_wpbakery.php:67 inc/register_wpbakery.php:80
+#: inc/register_wpbakery.php:89 inc/register_wpbakery.php:103
+#: inc/register_wpbakery.php:113 inc/register_wpbakery.php:123
+msgid "Video Background"
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin.php:68
+#: inc/classes/vidbg_siteorigin_integration.php:175
+#: inc/classes/vidbg_vc_integration.php:164 inc/classes/vidbg_wpbakery.php:55
+#: inc/register_metaboxes.php:57
+msgid "Link to .mp4"
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin.php:70
+#: inc/classes/vidbg_siteorigin_integration.php:177
+#: inc/classes/vidbg_vc_integration.php:166 inc/classes/vidbg_wpbakery.php:57
+msgid "Please specify the link to the .mp4 file."
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin.php:77
+#: inc/classes/vidbg_siteorigin_integration.php:183
+#: inc/classes/vidbg_vc_integration.php:175 inc/classes/vidbg_wpbakery.php:67
+#: inc/register_metaboxes.php:69
+msgid "Link to .webm"
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin.php:78
+#: inc/classes/vidbg_siteorigin_integration.php:184
+#: inc/classes/vidbg_vc_integration.php:177 inc/classes/vidbg_wpbakery.php:69
+msgid "Please specify the link to the .webm file."
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin.php:85
+#: inc/classes/vidbg_siteorigin_integration.php:211
+#: inc/classes/vidbg_vc_integration.php:219 inc/classes/vidbg_wpbakery.php:79
+msgid "Fallback Image"
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin.php:86
+#: inc/classes/vidbg_siteorigin_integration.php:212
+#: inc/classes/vidbg_vc_integration.php:221 inc/classes/vidbg_wpbakery.php:81
+msgid "Please upload a fallback image."
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin.php:93
+#: inc/classes/vidbg_siteorigin_integration.php:218
+#: inc/classes/vidbg_vc_integration.php:226 inc/classes/vidbg_wpbakery.php:87
+#: inc/register_metaboxes.php:129
+msgid "Enable Overlay?"
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin.php:94
+#: inc/classes/vidbg_siteorigin_integration.php:219
+#: inc/classes/vidbg_vc_integration.php:228 inc/classes/vidbg_wpbakery.php:89
+#: inc/register_metaboxes.php:130
+msgid ""
+"Add an overlay over the video. This is useful if your text isn't readable "
+"with a video background."
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin.php:101
+#: inc/classes/vidbg_siteorigin_integration.php:225
+#: inc/classes/vidbg_vc_integration.php:234 inc/classes/vidbg_wpbakery.php:96
+#: inc/register_metaboxes.php:144
+msgid "Overlay Color"
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin.php:102
+#: inc/classes/vidbg_siteorigin_integration.php:226
+#: inc/classes/vidbg_vc_integration.php:237 inc/classes/vidbg_wpbakery.php:99
+#: inc/register_metaboxes.php:145
+msgid ""
+"If overlay is enabled, a color will be used for the overlay. You can specify "
+"the color here."
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin.php:110
+#: inc/classes/vidbg_siteorigin_integration.php:233
+#: inc/classes/vidbg_vc_integration.php:246 inc/classes/vidbg_wpbakery.php:109
+#: inc/register_metaboxes.php:154
+msgid "Overlay Opacity"
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin.php:111
+#: inc/classes/vidbg_siteorigin_integration.php:234
+#: inc/classes/vidbg_vc_integration.php:249 inc/classes/vidbg_wpbakery.php:112
+msgid ""
+"Specify the opacity of the overlay. Accepts any value between 0.00-1.00 with "
+"0 being completely transparent and 1 being completely invisible. Ex. 0.30"
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin.php:119
+#: inc/classes/vidbg_siteorigin_integration.php:262
+#: inc/classes/vidbg_vc_integration.php:289 inc/classes/vidbg_wpbakery.php:122
+msgid "Disable Loop?"
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin.php:120
+#: inc/classes/vidbg_siteorigin_integration.php:263
+#: inc/classes/vidbg_vc_integration.php:291 inc/classes/vidbg_wpbakery.php:124
+#: inc/register_metaboxes.php:167
+msgid ""
+"Turn off the loop for Video Background. Once the video is complete, it will "
+"display the last frame of the video."
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin.php:129 inc/classes/vidbg_wpbakery.php:135
+msgid "Display \"Tap to unmute\" button?"
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin.php:130 inc/classes/vidbg_wpbakery.php:137
+msgid "Allow your users to interact with the sound of the video background."
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin_integration.php:164
+#: inc/register_siteorigin.php:20
+msgid "Video Background Type"
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin_integration.php:166
+#: inc/classes/vidbg_vc_integration.php:155 inc/register_siteorigin.php:22
+#: inc/register_wpbakery.php:22
+msgid ""
+"Please specify if you would like to self host your video background or use a "
+"YouTube video instead."
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin_integration.php:168
+#: inc/classes/vidbg_vc_integration.php:157 inc/register_metaboxes.php:48
+#: inc/register_siteorigin.php:24 inc/register_wpbakery.php:24
+msgid "Self Host"
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin_integration.php:169
+#: inc/classes/vidbg_vc_integration.php:158 inc/register_siteorigin.php:25
+#: inc/register_wpbakery.php:25
+msgid "YouTube"
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin_integration.php:190
+#: inc/classes/vidbg_vc_integration.php:186 inc/register_siteorigin.php:34
+#: inc/register_wpbakery.php:34
+msgid "Link to YouTube video"
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin_integration.php:191
+#: inc/classes/vidbg_vc_integration.php:188 inc/register_siteorigin.php:35
+#: inc/register_wpbakery.php:36
+msgid "Please specify the link to the YouTube video."
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin_integration.php:197
+#: inc/register_metaboxes.php:90 inc/register_siteorigin.php:42
+msgid "Youtube Start Second"
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin_integration.php:198
+#: inc/classes/vidbg_vc_integration.php:199 inc/register_metaboxes.php:91
+#: inc/register_siteorigin.php:43 inc/register_wpbakery.php:49
+msgid "The second the YouTube video background starts on."
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin_integration.php:204
+#: inc/register_metaboxes.php:99 inc/register_siteorigin.php:50
+msgid "Youtube End Second"
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin_integration.php:205
+#: inc/classes/vidbg_vc_integration.php:210 inc/register_metaboxes.php:100
+#: inc/register_siteorigin.php:51 inc/register_wpbakery.php:62
+msgid "The second the YouTube video background ends on."
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin_integration.php:241
+#: inc/classes/vidbg_vc_integration.php:258
+msgid "Overlay Texture"
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin_integration.php:242
+#: inc/classes/vidbg_vc_integration.php:260
+msgid ""
+"If you would like to display a custom pattern for an overlay, you can do so "
+"here."
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin_integration.php:248
+msgid "Enable Loader?"
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin_integration.php:249
+#: inc/classes/vidbg_vc_integration.php:271
+msgid ""
+"CSS loader until the video plays. (Note: If disabled, YouTube video "
+"backgrounds may still show their native loaders.)"
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin_integration.php:255
+#: inc/classes/vidbg_vc_integration.php:277
+msgid "Loader Fallback Background?"
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin_integration.php:256
+#: inc/classes/vidbg_vc_integration.php:279
+msgid "Make the background of the loader the fallback image if applicable."
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin_integration.php:269
+#: inc/classes/vidbg_vc_integration.php:297 inc/register_metaboxes.php:180
+#: inc/register_siteorigin.php:66 inc/register_wpbakery.php:86
+msgid "End video on fallback image?"
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin_integration.php:270
+#: inc/classes/vidbg_vc_integration.php:299 inc/register_metaboxes.php:181
+#: inc/register_siteorigin.php:67 inc/register_wpbakery.php:88
+msgid ""
+"If you would like your video to end on the fallback image, you can enable it "
+"here."
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin_integration.php:276
+#: inc/classes/vidbg_vc_integration.php:309 inc/register_siteorigin.php:74
+#: inc/register_wpbakery.php:100
+msgid "Enable play/pause button on the frontend?"
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin_integration.php:277
+#: inc/classes/vidbg_vc_integration.php:310 inc/register_metaboxes.php:195
+#: inc/register_siteorigin.php:75 inc/register_wpbakery.php:101
+msgid ""
+"By enabling this option, a play/pause button will show up in the bottom "
+"right hand corner of the video background."
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin_integration.php:283
+#: inc/classes/vidbg_vc_integration.php:317 inc/register_siteorigin.php:82
+#: inc/register_wpbakery.php:110
+msgid "Eanble mute/unmute button on the frontend?"
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin_integration.php:284
+#: inc/classes/vidbg_vc_integration.php:318 inc/register_metaboxes.php:209
+#: inc/register_siteorigin.php:83 inc/register_wpbakery.php:111
+msgid ""
+"By enabling this option, a mute/unmute button will show up in the bottom "
+"right hand corner of the video background."
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin_integration.php:290
+#: inc/classes/vidbg_vc_integration.php:325 inc/register_metaboxes.php:222
+#: inc/register_siteorigin.php:90 inc/register_wpbakery.php:120
+msgid "Frontend Buttons Position"
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin_integration.php:291
+#: inc/classes/vidbg_vc_integration.php:326 inc/register_metaboxes.php:223
+#: inc/register_siteorigin.php:91 inc/register_wpbakery.php:121
+msgid ""
+"Please select the position you would like your frontend buttons to be in. "
+"(If applicable)"
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin_integration.php:293
+#: inc/classes/vidbg_vc_integration.php:330 inc/register_metaboxes.php:229
+#: inc/register_siteorigin.php:93 inc/register_wpbakery.php:125
+msgid "Bottom Right"
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin_integration.php:294
+#: inc/classes/vidbg_vc_integration.php:331 inc/register_metaboxes.php:228
+#: inc/register_siteorigin.php:94 inc/register_wpbakery.php:126
+msgid "Top Right"
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin_integration.php:295
+#: inc/register_metaboxes.php:230 inc/register_siteorigin.php:95
+msgid "Bottom Left"
+msgstr ""
+
+#: inc/classes/vidbg_siteorigin_integration.php:296
+#: inc/register_metaboxes.php:231 inc/register_siteorigin.php:96
+msgid "Top Left"
+msgstr ""
+
+#: inc/classes/vidbg_vc_integration.php:153 inc/register_metaboxes.php:43
+#: inc/register_wpbakery.php:20
+msgid "Video background type"
+msgstr ""
+
+#: inc/classes/vidbg_vc_integration.php:197 inc/register_wpbakery.php:47
+msgid "YouTube Start Second"
+msgstr ""
+
+#: inc/classes/vidbg_vc_integration.php:208 inc/register_wpbakery.php:60
+msgid "YouTube End Second"
+msgstr ""
+
+#: inc/classes/vidbg_vc_integration.php:269
+msgid "Enable loader?"
+msgstr ""
+
+#: inc/classes/vidbg_vc_integration.php:332 inc/register_wpbakery.php:127
+msgid "Bottom left"
+msgstr ""
+
+#: inc/classes/vidbg_vc_integration.php:333 inc/register_wpbakery.php:128
+msgid "Top left"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#: inc/register_metaboxes.php:25
+msgid "Video Background Pro"
+msgstr ""
+
+#: inc/register_metaboxes.php:34
+msgid "Container"
+msgstr ""
+
+#: inc/register_metaboxes.php:35
+msgid ""
+"Please specify the container you would like your video background to be in. "
+"<a href=\"https://pushlabs.co/docs/video-background-pro/#finding-your-"
+"container\" target=\"_blank\">Learn how to find your container.</a>"
+msgstr ""
+
+#: inc/register_metaboxes.php:44
+msgid ""
+"Please specify if you would like to self host your video background or use a "
+"youtube video."
+msgstr ""
+
+#: inc/register_metaboxes.php:49
+msgid "Youtube"
+msgstr ""
+
+#: inc/register_metaboxes.php:50 inc/register_siteorigin.php:26
+#: inc/register_wpbakery.php:26
+msgid "Vimeo"
+msgstr ""
+
+#: inc/register_metaboxes.php:58
+msgid ""
+"Please specify the link to the .mp4 file. You can either enter a URL or "
+"upload a file."
+msgstr ""
+
+#: inc/register_metaboxes.php:62
+msgid "Upload .mp4 file"
+msgstr ""
+
+#: inc/register_metaboxes.php:70
+msgid ""
+"Please specify the link to the .webm file. You can either enter a URL or "
+"upload a file."
+msgstr ""
+
+#: inc/register_metaboxes.php:74
+msgid "Upload .webm file"
+msgstr ""
+
+#: inc/register_metaboxes.php:81
+msgid "Link to Youtube video"
+msgstr ""
+
+#: inc/register_metaboxes.php:82
+msgid "Please add the link to the Youtube video."
+msgstr ""
+
+#: inc/register_metaboxes.php:108
+msgid "Link to Vimeo Video"
+msgstr ""
+
+#: inc/register_metaboxes.php:109
+msgid "Please add the link to the Vimeo video."
+msgstr ""
+
+#: inc/register_metaboxes.php:117
+msgid "Link to fallback image"
+msgstr ""
+
+#: inc/register_metaboxes.php:118
+msgid ""
+"Please specify a link to the fallback image. You can either enter a URL or "
+"upload a file."
+msgstr ""
+
+#: inc/register_metaboxes.php:122
+msgid "Upload fallback image"
+msgstr ""
+
+#: inc/register_metaboxes.php:135 inc/register_metaboxes.php:172
+#: inc/register_metaboxes.php:186 inc/register_metaboxes.php:200
+#: inc/register_metaboxes.php:214
+msgid "No"
+msgstr ""
+
+#: inc/register_metaboxes.php:136 inc/register_metaboxes.php:173
+#: inc/register_metaboxes.php:187 inc/register_metaboxes.php:201
+#: inc/register_metaboxes.php:215
+msgid "Yes"
+msgstr ""
+
+#: inc/register_metaboxes.php:155
+msgid ""
+"Specify the opacity of the overlay with the left being mostly transparent "
+"and the right being hardly transparent."
+msgstr ""
+
+#: inc/register_metaboxes.php:166
+msgid "Disable loop?"
+msgstr ""
+
+#: inc/register_metaboxes.php:194
+msgid "Enable Play/Pause button"
+msgstr ""
+
+#: inc/register_metaboxes.php:208
+msgid "Enable Mute/Unmute button"
+msgstr ""
+
+#: inc/register_siteorigin.php:58 inc/register_wpbakery.php:73
+msgid "Link to Vimeo video"
+msgstr ""
+
+#: inc/register_siteorigin.php:59 inc/register_wpbakery.php:75
+msgid "Please specify the link to the Vimeo video."
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:80
+msgid "Test Metabox"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:91
+#: inc/vendor/cmb2/example-functions.php:383
+msgid "Test Text"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:92
+#: inc/vendor/cmb2/example-functions.php:104
+#: inc/vendor/cmb2/example-functions.php:112
+#: inc/vendor/cmb2/example-functions.php:120
+#: inc/vendor/cmb2/example-functions.php:129
+#: inc/vendor/cmb2/example-functions.php:137
+#: inc/vendor/cmb2/example-functions.php:152
+#: inc/vendor/cmb2/example-functions.php:160
+#: inc/vendor/cmb2/example-functions.php:168
+#: inc/vendor/cmb2/example-functions.php:185
+#: inc/vendor/cmb2/example-functions.php:194
+#: inc/vendor/cmb2/example-functions.php:207
+#: inc/vendor/cmb2/example-functions.php:214
+#: inc/vendor/cmb2/example-functions.php:221
+#: inc/vendor/cmb2/example-functions.php:235
+#: inc/vendor/cmb2/example-functions.php:248
+#: inc/vendor/cmb2/example-functions.php:261
+#: inc/vendor/cmb2/example-functions.php:273
+#: inc/vendor/cmb2/example-functions.php:282
+#: inc/vendor/cmb2/example-functions.php:290
+#: inc/vendor/cmb2/example-functions.php:299
+#: inc/vendor/cmb2/example-functions.php:306
+#: inc/vendor/cmb2/example-functions.php:320
+#: inc/vendor/cmb2/example-functions.php:384
+#: inc/vendor/cmb2/example-functions.php:475
+#: inc/vendor/cmb2/example-functions.php:483
+#: inc/vendor/cmb2/example-functions.php:490
+#: inc/vendor/cmb2/example-functions.php:497
+#: inc/vendor/cmb2/example-functions.php:504
+#: inc/vendor/cmb2/example-functions.php:511
+#: inc/vendor/cmb2/example-functions.php:518
+#: inc/vendor/cmb2/example-functions.php:545
+#: inc/vendor/cmb2/example-functions.php:553
+#: inc/vendor/cmb2/example-functions.php:560
+#: inc/vendor/cmb2/example-functions.php:597
+msgid "field description (optional)"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:103
+msgid "Test Text Small"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:111
+msgid "Test Text Medium"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:119
+msgid "Website URL"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:128
+msgid "Test Text Email"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:136
+msgid "Test Time"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:144
+#: inc/vendor/cmb2/example-functions.php:145
+msgid "Time zone"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:151
+msgid "Test Date Picker"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:159
+msgid "Test Date Picker (UNIX timestamp)"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:167
+msgid "Test Date/Time Picker Combo (UNIX timestamp)"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:184
+msgid "Test Money"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:193
+msgid "Test Color Picker"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:206
+msgid "Test Text Area"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:213
+msgid "Test Text Area Small"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:220
+msgid "Test Text Area for Code"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:227
+msgid "Test Title Weeeee"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:228
+msgid "This is a title description"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:234
+msgid "Test Select"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:240
+#: inc/vendor/cmb2/example-functions.php:253
+#: inc/vendor/cmb2/example-functions.php:265
+msgid "Option One"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:241
+#: inc/vendor/cmb2/example-functions.php:254
+#: inc/vendor/cmb2/example-functions.php:266
+msgid "Option Two"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:242
+#: inc/vendor/cmb2/example-functions.php:255
+#: inc/vendor/cmb2/example-functions.php:267
+msgid "Option Three"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:247
+msgid "Test Radio inline"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:260
+msgid "Test Radio"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:272
+msgid "Test Taxonomy Radio"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:281
+msgid "Test Taxonomy Select"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:289
+msgid "Test Taxonomy Multi Checkbox"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:298
+msgid "Test Checkbox"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:305
+msgid "Test Multi Checkbox"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:311
+msgid "Check One"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:312
+msgid "Check Two"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:313
+msgid "Check Three"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:319
+msgid "Test wysiwyg"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:327
+msgid "Test Image"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:328
+msgid "Upload an image or enter a URL."
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:334
+msgid "Multiple Files"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:335
+msgid "Upload or add multiple images/attachments."
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:342
+msgid "oEmbed"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:343
+msgid ""
+"Enter a youtube, twitter, or instagram URL. Supports services listed at <a "
+"href=\"http://codex.wordpress.org/Embeds\">http://codex.wordpress.org/"
+"Embeds</a>."
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:374
+msgid "About Page Metabox"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:403
+msgid "Repeating Field Group"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:411
+msgid "Generates reusable form entries"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:413
+msgid "Entry {#}"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:414
+msgid "Add Another Entry"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:415
+msgid "Remove Entry"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:428
+msgid "Entry Title"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:435
+msgid "Description"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:436
+msgid "Write a short description for this entry"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:442
+msgid "Entry Image"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:448
+msgid "Image Caption"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:467
+msgid "User Profile Metabox"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:474
+#: inc/vendor/cmb2/example-functions.php:544
+msgid "Extra Info"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:482
+msgid "Avatar"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:489
+msgid "Facebook URL"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:496
+msgid "Twitter URL"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:503
+msgid "Google+ URL"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:510
+msgid "Linkedin URL"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:517
+msgid "User Field"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:537
+msgid "Category Metabox"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:552
+msgid "Term Image"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:559
+msgid "Arbitrary Term Field"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:581
+msgid "Theme Options Metabox"
+msgstr ""
+
+#: inc/vendor/cmb2/example-functions.php:596
+msgid "Site Background Color"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2.php:122
+msgid "Metabox configuration is required to have an ID parameter"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2.php:375
+msgid "Click to toggle"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_Ajax.php:65
+msgid "Please Try Again"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_Ajax.php:155
+msgid "Remove Embed"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_Ajax.php:159
+#, php-format
+msgid "No oEmbed Results Found for %s. View more info at"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_Field.php:1030
+msgid "Add Group"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_Field.php:1031
+msgid "Remove Group"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_Field.php:1053
+#: inc/vendor/cmb2/includes/CMB2_Field.php:1057
+msgid "None"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_JS.php:86
+#: inc/vendor/cmb2/includes/CMB2_JS.php:119
+msgid "Clear"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_JS.php:87
+msgid "Default"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_JS.php:88
+msgid "Select Color"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_JS.php:89
+msgid "Current Color"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_JS.php:109
+msgctxt "Valid formatDate string for jquery-ui datepicker"
+msgid "mm/dd/yy"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_JS.php:110
+msgid "Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_JS.php:111
+msgid "Su, Mo, Tu, We, Th, Fr, Sa"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_JS.php:112
+msgid "Sun, Mon, Tue, Wed, Thu, Fri, Sat"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_JS.php:113
+msgid ""
+"January, February, March, April, May, June, July, August, September, "
+"October, November, December"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_JS.php:114
+msgid "Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_JS.php:115
+msgid "Next"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_JS.php:116
+msgid "Prev"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_JS.php:117
+msgid "Today"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_JS.php:118
+#: inc/vendor/cmb2/includes/CMB2_JS.php:128
+msgid "Done"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_JS.php:122
+msgid "Choose Time"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_JS.php:123
+msgid "Time"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_JS.php:124
+msgid "Hour"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_JS.php:125
+msgid "Minute"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_JS.php:126
+msgid "Second"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_JS.php:127
+msgid "Now"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_JS.php:129
+msgctxt ""
+"Valid formatting string, as per http://trentrichardson.com/examples/"
+"timepicker/"
+msgid "hh:mm TT"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_JS.php:135
+msgid "Use this file"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_JS.php:136
+msgid "Use these files"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_JS.php:137
+#: inc/vendor/cmb2/includes/CMB2_Types.php:1021
+msgid "Remove Image"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_JS.php:138
+#: inc/vendor/cmb2/includes/CMB2_Types.php:357
+#: inc/vendor/cmb2/includes/CMB2_Types.php:1040
+msgid "Remove"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_JS.php:139
+#: inc/vendor/cmb2/includes/CMB2_Types.php:1035
+msgid "File:"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_JS.php:140
+#: inc/vendor/cmb2/includes/CMB2_Types.php:1038
+msgid "Download"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_JS.php:141
+msgid "Select / Deselect All"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_Types.php:298
+msgid "Add Row"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_Types.php:768
+#: inc/vendor/cmb2/includes/CMB2_Types.php:816
+msgid "No terms"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_Types.php:884
+msgid "Add or Upload Files"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_Types.php:945
+msgid "Add or Upload File"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_hookup.php:120
+msgid ""
+"Term Metadata is a WordPress > 4.4 feature. Please upgrade your WordPress "
+"install."
+msgstr ""
+
+#: inc/vendor/cmb2/includes/CMB2_hookup.php:124
+msgid "Term metaboxes configuration requires a 'taxonomies' parameter"
+msgstr ""
+
+#: inc/vendor/cmb2/includes/helper-functions.php:250
+msgid "Save"
+msgstr ""
+
+#: license-page.php:138
+msgid " Activation"
+msgstr ""
+
+#: license-page.php:139
+msgid " API Key Activation"
+msgstr ""
+
+#: license-page.php:140 license-page.php:381
+msgid "API Key Activation"
+msgstr ""
+
+#: license-page.php:141
+msgid "API Key Deactivation"
+msgstr ""
+
+#: license-page.php:142
+msgid "Getting Started"
+msgstr ""
+
+#: license-page.php:301
+#, php-format
+msgid ""
+"The <strong>%s</strong> API Key has not been activated, so the %s is "
+"limited! %sClick here%s to activate <strong>%s</strong>."
+msgstr ""
+
+#: license-page.php:318
+#, php-format
+msgid ""
+"<b>Warning!</b> You're blocking external requests which means you won't be "
+"able to get %s updates. Please add %s to %s."
+msgstr ""
+
+#: license-page.php:352 license-page.php:356
+msgid "Save Changes"
+msgstr ""
+
+#: license-page.php:358
+msgid "<h3>Getting Started</h3>"
+msgstr ""
+
+#: license-page.php:359
+msgid ""
+"<p>Video background Pro makes it easy to add responsive, great looking video "
+"backgrounds to any element on your website. There are four ways to implement "
+"a video background with the Video Background Pro plugin:</p>"
+msgstr ""
+
+#: license-page.php:361
+msgid ""
+"<li><a href=\"https://pushlabs.co/docs/video-background-pro/#using-the-"
+"metabox\" target=\"_blank\">Using the metabox</a></li>"
+msgstr ""
+
+#: license-page.php:362
+msgid ""
+"<li><a href=\"https://pushlabs.co/docs/video-background-pro/#using-visual-"
+"composer\" target=\"_blank\">Using the WPBakery (Visual Composer) "
+"integration</a></li>"
+msgstr ""
+
+#: license-page.php:363
+msgid ""
+"<li><a href=\"https://pushlabs.co/docs/video-background-pro/#using-page-"
+"builder\" target=\"_blank\">Using the SiteOrigin Page Builder Integration</"
+"a></li>"
+msgstr ""
+
+#: license-page.php:364
+msgid ""
+"<li><a href=\"https://pushlabs.co/docs/video-background-pro/#using-the-"
+"shortcode\" target=\"_blank\">Using the shortcode.</a></li>"
+msgstr ""
+
+#: license-page.php:366
+msgid ""
+"<p>For full documentation, instructions, and video tutorials, please visit "
+"<a href=\"https://pushlabs.co/docs/video-background-pro\" target=\"_blank"
+"\">the docs</a>.</p>"
+msgstr ""
+
+#: license-page.php:367
+msgid ""
+"<p>If you couldn't find a solution in the docs, please <a href=\"https://"
+"pushlabs.co/support\" target=\"_blank\">open a ticket.</a></p>"
+msgstr ""
+
+#: license-page.php:368
+msgid ""
+"<p>If you've lost you license key, you can <a href=\"https://pushlabs.co/"
+"lost-license/\" target=\"_blank\">recover it here.</a></p>"
+msgstr ""
+
+#: license-page.php:385
+msgid "API Key Status"
+msgstr ""
+
+#: license-page.php:389
+msgid "API Key"
+msgstr ""
+
+#: license-page.php:393
+msgid "API Email"
+msgstr ""
+
+#: license-page.php:399
+msgid "API Deactivation"
+msgstr ""
+
+#: license-page.php:403
+msgid "Deactivate API Key"
+msgstr ""
+
+#: license-page.php:471
+#, php-format
+msgid "%s activated. "
+msgstr ""
+
+#: license-page.php:477
+msgid ""
+"Connection failed to the License Key API server. Try again later. There may "
+"be a problem on your server preventing outgoing requests, or the store is "
+"blocking your request to activate the plugin/theme."
+msgstr ""
+
+#: license-page.php:575
+msgid ""
+"The API Key could not be deactivated. Use the API Key Deactivation tab to "
+"manually deactivate the API Key before activating a new API Key. If all else "
+"fails, go to Plugins, then deactivate and reactivate this plugin, or if a "
+"theme change themes, then change back to this theme, then go to the Settings "
+"for this plugin/theme and enter the API Key information again to activate "
+"it. Also check the My Account dashboard to see if the API Key for this site "
+"was still active before the error message was displayed."
+msgstr ""
+
+#: license-page.php:610
+msgid "API Key deactivated. "
+msgstr ""
+
+#: license-page.php:683
+msgid "Deactivates an API Key so it can be used on another blog."
+msgstr ""
+
+#: license-page.php:1047
+#, php-format
+msgid ""
+"The license key for %s has expired. You can reactivate or purchase a license "
+"key from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: license-page.php:1054
+#, php-format
+msgid ""
+"The subscription for %s is on-hold. You can reactivate the subscription from "
+"your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: license-page.php:1061
+#, php-format
+msgid ""
+"The subscription for %s has been cancelled. You can renew the subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>. A new "
+"license key will be emailed to you after your order has been completed."
+msgstr ""
+
+#: license-page.php:1068
+#, php-format
+msgid ""
+"The subscription for %s has expired. You can reactivate the subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: license-page.php:1075
+#, php-format
+msgid ""
+"The subscription for %s has been suspended. You can reactivate the "
+"subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</"
+"a>."
+msgstr ""
+
+#: license-page.php:1082
+#, php-format
+msgid ""
+"The subscription for %s is still pending. You can check on the status of the "
+"subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</"
+"a>."
+msgstr ""
+
+#: license-page.php:1089
+#, php-format
+msgid ""
+"The subscription for %s has been placed in the trash and will be deleted "
+"soon. You can purchase a new subscription from your account <a href=\"%s\" "
+"target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: license-page.php:1096
+#, php-format
+msgid ""
+"A subscription for %s could not be found. You can purchase a subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: license-page.php:1103
+#, php-format
+msgid ""
+"A license key for %s could not be found. Maybe you forgot to enter a license "
+"key when setting up %s, or the key was deactivated in your account. You can "
+"reactivate or purchase a license key from your account <a href=\"%s\" target="
+"\"_blank\">dashboard</a>."
+msgstr ""
+
+#: license-page.php:1110
+#, php-format
+msgid ""
+"Download permission for %s has been revoked possibly due to a license key or "
+"subscription expiring. You can reactivate or purchase a license key from "
+"your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: license-page.php:1117
+#, php-format
+msgid ""
+"%s has not been activated. Go to the settings page and enter the license key "
+"and license email to activate %s."
+msgstr ""
+
+#: license-page.php:1124
+#, php-format
+msgid ""
+"You changed the subscription for %s, so you will need to enter your new API "
+"License Key in the settings page. The License Key should have arrived in "
+"your email inbox, if not you can get it by logging into your account <a href="
+"\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: vidbgpro.php:263
+msgid "Show Advanced Options"
+msgstr ""
+
+#: vidbgpro.php:264
+msgid "Hide Advanced Options"
+msgstr ""
+
+#: vidbgpro.php:375
+msgid ""
+"<a href=\"options-general.php?page=video_background_pro_dashboard\">Getting "
+"Started</a>"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://pushlabs.co/video-background-pro/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Pro version of the popular Video Background plugin on the WordPress repo."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Push Labs"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://pushlabs.co"
+msgstr ""
